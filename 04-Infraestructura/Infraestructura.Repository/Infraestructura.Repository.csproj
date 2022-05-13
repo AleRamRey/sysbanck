@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.123" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\05-Transversal\Transversal.Common\Transversal.Common.csproj" />
+    <ProjectReference Include="..\Infraestructura.Data\Infraestructura.Data.csproj" />
+    <ProjectReference Include="..\Infraestructura.Interface\Infraestructura.Interface.csproj" />
+  </ItemGroup>
+
+</Project>

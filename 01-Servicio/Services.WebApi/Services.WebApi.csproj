@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.8" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.17.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.17.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\02-Aplicacion\Application.DTO\Application.DTO.csproj" />
+    <ProjectReference Include="..\..\02-Aplicacion\Application.Interface\Application.Interface.csproj" />
+    <ProjectReference Include="..\..\02-Aplicacion\Application.Main\Application.Main.csproj" />
+    <ProjectReference Include="..\..\03-Dominio\Domain.Core\Domain.Core.csproj" />
+    <ProjectReference Include="..\..\03-Dominio\Domain.Interface\Domain.Interface.csproj" />
+    <ProjectReference Include="..\..\04-Infraestructura\Infraestructura.Data\Infraestructura.Data.csproj" />
+    <ProjectReference Include="..\..\04-Infraestructura\Infraestructura.Interface\Infraestructura.Interface.csproj" />
+    <ProjectReference Include="..\..\04-Infraestructura\Infraestructura.Repository\Infraestructura.Repository.csproj" />
+    <ProjectReference Include="..\..\05-Transversal\Transversal.Logging\Transversal.Logging.csproj" />
+    <ProjectReference Include="..\..\05-Transversal\Transversal.Mapper\Transversal.Mapper.csproj" />
+  </ItemGroup>
+
+</Project>
