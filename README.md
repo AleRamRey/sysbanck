@@ -33,13 +33,14 @@
 #### 9. Cobertura de código
 #### 10. Inyección de dependencias
 
-![](https://github.com/AleRamRey/edenred-sysbanck/blob/master/Utils/images/API.JPG)
-
 ### _FUNCIONAMIENTO API_ 
 
 #### 1. Autenticación JWT
 #### 2. CRUD Customers Métodos Síncronos
 #### 3. CRUD Customers Metodos Asíncronos
+
+![](https://github.com/AleRamRey/edenred-sysbanck/blob/master/Utils/images/API.JPG)
+
 #### 4. Pruebas Unitarias
 
 ![](https://github.com/AleRamRey/edenred-sysbanck/blob/master/Utils/images/Test.JPG)
