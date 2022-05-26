@@ -32,3 +32,4 @@ jobs:
         
       - name: Unit Tests
         run: dotnet test ${{ env.PROJECT_TEST_PATH }}
+        
