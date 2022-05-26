@@ -16,10 +16,10 @@ jobs:
       PROJECT_TEST_PATH: '02-Aplicacion-Test/Application.Test'
     steps:
       - name: Check out repository code ('${{ github.repository }}' cloned to runner)
-        uses: actions/checkout@V2
+        uses: actions/checkout@v2
         
       - name: Setup .NET Core SDK (${{ env.DOTNET_CORE_VERSION }})
-        uses: actions/setup-dotnet@V1
+        uses: actions/setup-dotnet@v1
         with:
           dotnet-version: ${{ env.DOTNET_CORE_VERSION }}
           
