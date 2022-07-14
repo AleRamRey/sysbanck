@@ -5,15 +5,6 @@ on:
       - '**/*.md'
 
 jobs:
-
-  build:
-    runs-on: windows-latest
-    steps:
-    - uses: actions/checkout@v1
-    - uses: azure/sql-action@v1.3
-      with:
-        connection-string: ${{ secrets.AZURE_SQL_CONNECTION_STRING }}
-
   Job-DotNet-Push:
     runs-on: ubuntu-latest
     env:
