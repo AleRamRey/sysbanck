@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: microservice-webapi-deploy
+  labels:
+    name: microservice-webapi-deploy
+    app: microservice
+spec:
+  replicas: 2
+  selector: 
+    matchLabels:
+      app: microservice-webapi
+      type: microservice
+  template:
+    metadata:
+      name: microservice-webapi-pod
+      labels:
+        app: microservice-webapi
+        type: microservice
+    spec:
+      containers:
+        - name: microservice-webapi-app
+          image: alrare/serviceswebapi:v2.#{Build.BuildId}#
+          ports:
+            - containerPort: 80
+          env:
+            - name: ConnectionStrings__NorthwindConnection
+              value: Server=mssql-service;Database=sysbank;User=admsq1server;Password=$Ramirez42

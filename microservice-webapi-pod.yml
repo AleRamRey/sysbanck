@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: microservice-webapi-pod
+  labels:
+    app: microservice-webapi
+    type: microservice
+spec:
+  containers:
+    - name: microservice-webapi-app
+      image: alrare/serviceswebapi:latest
+      ports:
+        - containerPort: 80
+      env:
+        - name: ConnectionStrings__NorthwindConnection
+          value: Server=mssql-service;Database=sysbank;User=admsq1server;Password=$Ramirez42

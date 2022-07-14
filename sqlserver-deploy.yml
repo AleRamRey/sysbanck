@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mssql-deploy
+  labels:
+    name: mssql-deploy
+    app: microservice-webapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: microservices-webapi
+      name: mssql-pod
+  template:
+    metadata:
+      name: mssql-pod
+      labels:
+        app: microservices-webapi
+        name: mssql-pod
+    spec:
+      containers:
+        - name: mssql
+          image: mcr.microsoft.com/mssql/server
+          ports:
+            - containerPort: 1433
+          env:
+          - name: ACCEPT_EULA
+            value: "Y"
+          - name: SA_PASSWORD
+            value: "$Ramirez42"

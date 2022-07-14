@@ -43,7 +43,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Transversal.Common", "05-Tr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Transversal.Logging", "05-Transversal\Transversal.Logging\Transversal.Logging.csproj", "{BB37F02C-5AA0-48D6-8480-6630D38099F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.WebApi", "01-Servicio\Services.WebApi\Services.WebApi.csproj", "{60653074-3CF5-4F3A-8657-9C2D9B889F70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services.WebApi", "01-Servicio\Services.WebApi\Services.WebApi.csproj", "{60653074-3CF5-4F3A-8657-9C2D9B889F70}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00-Kubernetes", "00-Kubernetes", "{D8E33C01-8116-4017-A9B7-E8BC890D6CF2}"
+	ProjectSection(SolutionItems) = preProject
+		microservice-webapi-deploy.yml = microservice-webapi-deploy.yml
+		microservice-webapi-pod.yml = microservice-webapi-pod.yml
+		microservice-webapi-service.yml = microservice-webapi-service.yml
+		sqlserver-deploy.yml = sqlserver-deploy.yml
+		sqlserver-pod.yml = sqlserver-pod.yml
+		sqlserver-service.yml = sqlserver-service.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
